@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">Gruve<span>Communications</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">🏠Home</a></li>
+      <li><a href="about.html">👤About Us</a></li>
+      <li><a href="contact.html">☎️Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h1>Welcome to Gruve Communcations</h1>
+    <p>A unique platform to synthesize customized and well-defined communication strategies that hit the right TG resulting in better Brand Recall and Brand Loyalty.</p>
+    <button onclick="scrollToContact()">Get in Touch</button>
+  </header>
+
+  <section class="features">
+    <div class="card" onclick="toggleCard(this)">
+      <h3>🚀 Fast & Responsive</h3>
+      <p>Built with mobile-first principles.</p>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+      <h3>💡 Clean Code</h3>
+      <p>Well-structured and maintainable.</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">Gruve<span>Communications</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">🏠Home</a></li>
+      <li><a href="about.html">👤About Us</a></li>
+      <li><a href="contact.html">☎️Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main class="contact-form-container">
+    <h2>Contact Us📲</h2>
+    <form id="contactForm" onsubmit="handleSubmit(event)">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p>Thank you! Your message has been sent.</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
